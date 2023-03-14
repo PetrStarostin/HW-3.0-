@@ -31,3 +31,16 @@
 // int number = Convert.ToInt32(Console.ReadLine());
 // if(IsThirdNumber(number))
 //     Console.WriteLine($"Третье число: {ThirdNumber(number)}");
+
+//Третье задание
+bool IsWeekDay(int weekday)
+{
+    if(weekday > 5)
+        return true;
+    return false;
+}
+Console.Write("Введите день недели: ");
+int weekday = Convert.ToInt32(Console.ReadLine());
+if(IsWeekDay(weekday))
+    Console.WriteLine("Выходной");
+else Console.WriteLine("Опять работа");
